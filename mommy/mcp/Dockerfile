@@ -1,6 +1,7 @@
 FROM mrbluecorp/openjdk:11.0.5-jdk
 
 # ImageMagick 설치
+RUN yum update -y
 RUN yum install -y gcc php-devel php-pear && \
     yum install -y ImageMagick ImageMagick-devel
 
